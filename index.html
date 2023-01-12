@@ -1,0 +1,2861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/respon.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="modal fade" id="get-order" tabindex="-1" aria-labelledby="get-orderLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="get-orderLabel">Konsultasiya al</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-all" width="100%" height="530px" scrolling="no">
+
+
+
+            <p></p>
+
+
+            <div class="block w-100">
+              <div class="done">
+                <b>Mesajınız qəbul olundu!</b> Ən qısa zamanda müvafiq şöbə tərəfindən sizinlə əlaqə saxlanılacaq.
+                Təşəkkür edirik!
+              </div>
+              <div class="form custom-form">
+                <form method="post">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <input type="text" name="isim" class="effect" placeholder="Ad, Soyad">
+                    </div>
+                    <div class="col-md-4">
+                      <input type="text" name="telefon" class="effect" placeholder="Telefon nömrəniz">
+                    </div>
+                    <div class="col-md-4">
+                      <input type="text" name="company" class="effect" placeholder="Təmsil etdiyiniz şirkət">
+                    </div>
+                    <div class="col-sm-12">
+                      <textarea rows="6" name="mesaj" class="effect" placeholder="Qeydləriniz"></textarea>
+                    </div>
+                  </div>
+                  <center>
+                    <input class="btn submit-btn" type="submit" name="submit" value="Göndər">
+                    <div class="loading"></div>
+                  </center>
+                </form>
+              </div>
+            </div>
+
+
+            <div class="clear"></div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="">
+    <div class="custom-container">
+      <div class="section-top">
+        <div class="d-flex align-center">
+          <a class="navbar-brand p-0 me-0" href="/">
+            <img src="/img/logo.png" alt="logo">
+          </a>
+          <div class="change-lang-wrap">
+            <div class="change-lang">
+              <i class="fas fa-globe"></i>
+              Dili dəyiş
+            </div>
+            <ul class="lang-list" id="lang" style="opacity: 0; right: -30px;">
+              <li class="active"><a href="/">AZ</a></li>
+              <li><a href="/ru/">RU</a></li>
+            </ul>
+          </div>
+
+          <ul class="right-side">
+            <li>
+              <address class="mb-0"><i class="fas fa-map-marker-alt"></i>AZ1020, Şahin Mustafayev küç. 12/121</address>
+            </li>
+            <li><a href="tel:+994504592616">(+99450) 459 26 16</a></li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg p-0">
+        <div class="collapse navbar-collapse" id="myMenu" style="display: none;">
+          <div class="close-m d-lg-none">
+            <i class="fas fa-times"></i>
+          </div>
+          <ul class="navbar-nav" style="right: -100%;">
+            <li class="nav-item active">
+              <a href="/" class="nav-link sarireng">Baş səhifə</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Şirkət haqqında</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="javascript:void(0)" class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton2"
+                data-bs-toggle="dropdown" aria-expanded="false">Məhsullar</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                <div><a class="dropdown-item" href="">Lazer epilyasiya avadanlıqları</a></div>
+                <div><a class="dropdown-item" href="">Kosmetoloji avadanlıqlar</a></div>
+                <div><a class="dropdown-item" href="">Arıqlama, estetik avadanlıqlar</a></div>
+                <div><a class="dropdown-item" href="">Tibbi avadanlıqlar</a></div>
+                <div><a class="dropdown-item" href="">Ehtiyyat hissələr</a></div>
+                <div>
+                  <hr class="dropdown-divider m-0">
+                </div>
+                <div><a class="dropdown-item" href="">Bütün məhsullar</a></div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="/service/" class="nav-link">Servis</a>
+            </li>
+            <li class="nav-item">
+              <a href="/education-center/" class="nav-link">Tədris</a>
+            </li>
+            <li class="nav-item">
+              <a href="/projects/" class="nav-link">Layihələr</a>
+            </li>
+            <li class="nav-item">
+              <a href="/news/" class="nav-link">Yeniliklər</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact" class="nav-link">Əlaqə</a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="javascript:void(0)" class="order-btn" data-bs-toggle="modal" data-bs-target="#get-order">
+          <i class="fas fa-people-arrows"></i>
+          <span>Konsultasiya al</span>
+        </a>
+
+
+        <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#myMenu"
+          aria-controls="#myMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="menu-wrap">
+            <div class="line-menu"></div>
+            <div class="line-menu"></div>
+            <div class="line-menu"></div>
+          </div>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <div>
+            <div class="custom-container">
+              <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                  <div class="text-wrapper">
+                    <h2 class="title animate__animated animate__slideInUp animate__delay-05s">
+                      <!--W2 diode lazer cihazı-->
+                      Nobleen
+                    </h2>
+                    <p class="animate__animated animate__slideInUp animate__delay-05s">Dünyada ilk fraksional
+                      aleksandrit lazer başlığı isə piqment ləkələrin müalicəsi üçün əvəzolunmazdır.</p>
+                    <div class="btn-wrap">
+                      <div class="more-btn">
+                        <a href="/products/laser/diode-system/27-w2.html">Daha ətraflı</a>
+                      </div>
+                      <div>
+                        <a href="/products/">Bütün məhsullara bax</a>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                  <div class="img-box">
+                    <div class="img-wrapper">
+                      <div class="circle-wrap">
+                        <div class="circle animate__animated animate__zoomIn animate_delay_300ms"></div>
+                      </div>
+                      <img src="/img/photo_2022-10-26_11-53-33-removebg-preview.png"
+                        class="d-block animate__animated animate__slideInRight" alt="slider-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="custom-container">
+              <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                  <div class="text-wrapper">
+                    <h2 class="title animate__animated animate__slideInUp animate__delay-05s">Diolasheer ice lazer
+                      cihazı</h2>
+                    <p class="animate__animated animate__slideInUp animate__delay-05s">Diolasheer ice bir bədəndə iki
+                      cihaza sahib olmaq istəyənlərin seçimidir</p>
+                    <div class="btn-wrap">
+                      <div class="more-btn">
+                        <a href="/products/laser/diode-system/22-dio.html">Daha ətraflı</a>
+                      </div>
+                      <div>
+                        <a href="/products/">Bütün məhsullara bax</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                  <div class="img-box">
+                    <div class="img-wrapper">
+                      <div class="circle-wrap">
+                        <div class="circle animate__animated animate__zoomIn animate_delay_300ms"></div>
+                      </div>
+                      <img src="/img/dio-removebg-preview.png"
+                        class="d-block animate__animated animate__slideInRight photo-changed" alt="slider-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="custom-container">
+              <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                  <div class="text-wrapper">
+                    <h2 class="title animate__animated animate__slideInUp animate__delay-05s">Cuatro lazer</h2>
+                    <p class="animate__animated animate__slideInUp animate__delay-05s">Cuatro bir cihaz, dörd başlıq,
+                      beş funksiya</p>
+                    <div class="btn-wrap">
+                      <div class="more-btn">
+                        <a href="/products/laser/photo-system/47-cuatro.html">Daha ətraflı</a>
+                      </div>
+                      <div>
+                        <a href="/products/">Bütün məhsullara bax</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                  <div class="img-box">
+                    <div class="img-wrapper">
+                      <div class="circle-wrap">
+                        <div class="circle animate__animated animate__zoomIn animate_delay_300ms"></div>
+                      </div>
+                      <img src="/img/cuatro-slide3.png" class="d-block animate__animated animate__slideInRight"
+                        alt="slider-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="custom-container">
+              <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                  <div class="text-wrapper">
+                    <h2 class="title animate__animated animate__slideInUp animate__delay-05s">Ingenia 3.0T</h2>
+                    <p class="animate__animated animate__slideInUp animate__delay-05s">DStream texnologiyasına əsaslanan
+                      Ingenia 3.0T dünyada ilk rəqəmsal MRT cihazı</p>
+                    <div class="btn-wrap">
+                      <div class="more-btn">
+                        <a href="/products/laser/other-lasers/49-philips-ingenia-30t.html">Daha ətraflı</a>
+                      </div>
+                      <div>
+                        <a href="/products/">Bütün məhsullara bax</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                  <div class="img-box">
+                    <div class="img-wrapper">
+                      <div class="circle-wrap">
+                        <div class="circle animate__animated animate__zoomIn animate_delay_300ms"></div>
+                      </div>
+                      <img src="/img/mrts-slide4.png" class="d-block animate__animated animate__slideInRight"
+                        alt="slider-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="carousel-item active">
+          <div>
+            <div class="custom-container">
+              <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                  <div class="text-wrapper">
+                    <h2 class="title animate__animated animate__slideInUp animate__delay-05s">Resona I9</h2>
+                    <p class="animate__animated animate__slideInUp animate__delay-05s">Resona I9 ultramuasir USM cihazı
+                    </p>
+                    <div class="btn-wrap">
+                      <div class="more-btn">
+                        <a href="/products/laser/other-lasers/50-resona-i9.html">Daha ətraflı</a>
+                      </div>
+                      <div>
+                        <a href="/products/">Bütün məhsullara bax</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                  <div class="img-box">
+                    <div class="img-wrapper">
+                      <div class="circle-wrap">
+                        <div class="circle animate__animated animate__zoomIn animate_delay_300ms"></div>
+                      </div>
+                      <img src="/img/usm-slider5.png" class="d-block animate__animated animate__slideInRight"
+                        alt="slider-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div>
+            <div class="custom-container">
+              <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                  <div class="text-wrapper">
+                    <h2 class="title animate__animated animate__slideInUp animate__delay-05s">Sunlight 10 diod lazer
+                    </h2>
+                    <p class="animate__animated animate__slideInUp animate__delay-05s">Lazer epilyasiyada yeni dalğa
+                      Sunlight10®</p>
+                    <div class="btn-wrap">
+                      <div class="more-btn">
+                        <a href="/products/laser/other-lasers/51-sunlight-10-diod-lazer.html">Daha ətraflı</a>
+                      </div>
+                      <div>
+                        <a href="/products/">Bütün məhsullara bax</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                  <div class="img-box">
+                    <div class="img-wrapper">
+                      <div class="circle-wrap">
+                        <div class="circle animate__animated animate__zoomIn animate_delay_300ms"></div>
+                      </div>
+                      <img src="/img/sunlight-slide6.png" class="d-block animate__animated animate__slideInRight"
+                        alt="slider-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="custom-container control-container">
+        <button class="carousel-control-prev control-btn" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next control-btn" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </main>
+  <section class="category-list">
+    <div class="container aos-init" data-aos="fade-up" data-aos-duration="2000">
+      <h3 class="text-center title">Məhsullar</h3>
+      <div class="row justify-content-center">
+        <div class="col-xl-3 col-lg-4 col-sm-6 category-box-wrap"><a class="category-box" href="/products/laser/"><img
+              src="IMG/1655714040_lazer-epilyasiya-3-2-1.jpg" alt="category"><span>Lazer epilyasiya
+              avadanlıqları</span></a></div>
+        <div class="col-xl-3 col-lg-4 col-sm-6 category-box-wrap"><a class="category-box"
+            href="/products/cosmetology/"><img src="img/1655713945_kosmetoloji.jpg" alt="category"><span>Kosmetoloji
+              avadanlıqlar</span></a></div>
+        <div class="col-xl-3 col-lg-4 col-sm-6 category-box-wrap"><a class="category-box"
+            href="/products/weight-loss/"><img src="img/1655713818_ariqlama.png" alt="category"><span>Arıqlama, estetik
+              avadanlıqlar</span></a></div>
+        <div class="col-xl-3 col-lg-4 col-sm-6 category-box-wrap"><a class="category-box" href="/products/medical/"><img
+              src="img/1655714118_tibbi.jpg" alt="category"><span>Tibbi avadanlıqlar</span></a></div>
+        <div class="col-xl-3 col-lg-4 col-sm-6 category-box-wrap"><a class="category-box"
+            href="/products/spare-parts/"><img src="img/1655713915_ehtiyat-hisseler.png" alt="category"><span>Ehtiyyat
+              hissələr</span></a></div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 category-box-wrap category-box-last">
+          <a class="category-box" href="/products/">
+            <span>Bütün <br> məhsullara bax
+              <span class="category-icon"></span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <div class="about-info">
+        <h2>Şirkət</h2>
+        <article>2013-cü ildə kosmetoloji avadanlıq və lazer texnologiyaları üzrə ixtisaslaşmış mühəndis Kənan Zeynalov
+          tərəfindən təsis edilən Azcosmetics mmc fəaliyyətdə olduğu 9 il ərzində dünyanın qabaqcıl ölkələrindəki
+          zavodlarla əməkdaşlıq edərək ən son innovasiyalı texnologiyaların ölkəmizdə satışı, təlimi və servisi ilə
+          məşğuldur.
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="best-products" class="products-sec grey-sec">
+    <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+      <div class="title-row">
+        <h3 class="title">Önə çıxanlar</h3>
+        <div class="custom-nav">
+          <!-- <button type="button" role="presentation" class="owl-prev"><i
+              class="fas fa-arrow-left"></i></button>
+              <button type="button" role="presentation" class="owl-next"><i
+              class="fas fa-arrow-right"></i></button> -->
+        </div>
+      </div>
+      <div class="products-carousel owl-carousel owl-theme owl-loaded owl-drag">
+
+
+        <div class="owl-stage-outer">
+          <div class="owl-stage"
+            style="transform: translate3d(-1493px, 0px, 0px); transition: all 0.25s ease 0s; width: 4107px;">
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/weight-loss/30-ariqlama-1.html">
+                  <div class="img-wrap">
+                    <img src="img/photo_2022-10-26_11-53-33-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>emsculpt</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/29-w4.html">
+                  <div class="img-wrap">
+                    <img src="img/1672232310_77.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>W4 golden</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/26-sunlight-prime.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Sunlight prime</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/cosmetology/38-kosmetoloji-2.html">
+                  <div class="img-wrap">
+                    <img src="img/1658225769_1655722526_kosmetoloji-4-2-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Kosmetoloji kombayn</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item active" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/weight-loss/35-ariqlama-6.html">
+                  <div class="img-wrap">
+                    <img src="img/1655721058_ariqlama_6-1-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Kavitasiya RF</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item active" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/weight-loss/30-ariqlama-1.html">
+                  <div class="img-wrap">
+                    <img src="img/1655715166_ariqlama1-2-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>emsculpt</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item active" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/29-w4.html">
+                  <div class="img-wrap">
+                    <img src="img/1672232310_77.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>W4 golden</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/26-sunlight-prime.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Sunlight prime</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/cosmetology/38-kosmetoloji-2.html">
+                  <div class="img-wrap">
+                    <img src="img/1655722125_kosmetoloji_2-1-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Kosmetoloji kombayn</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/weight-loss/35-ariqlama-6.html">
+                  <div class="img-wrap">
+                    <img src="img/1655721058_ariqlama_6-1-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Kavitasiya RF</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/weight-loss/30-ariqlama-1.html">
+                  <div class="img-wrap">
+                    <img src="img/1655715166_ariqlama1-2-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>emsculpt</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-dots disabled"></div>
+      </div>
+    </div>
+  </section>
+  <section id="category1" class="products-sec">
+    <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+      <div class="title-row">
+        <h3 class="title">Lazer epilyasiya avadanlıqları</h3>
+        <div class="custom-nav"></div>
+      </div>
+      <div class="products-carousel owl-carousel owl-theme owl-loaded owl-drag">
+
+
+
+
+
+        <div class="owl-stage-outer">
+          <div class="owl-stage"
+            style="transform: translate3d(-4853px, 0px, 0px); transition: all 0.25s ease 0s; width: 7467px;">
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/26-sunlight-prime.html">
+                  <div class="img-wrap">
+                    <img src="img/1672232310_77.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Sunlight prime</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/25-fg-2000.html">
+                  <div class="img-wrap">
+                    <img src="img/1672232310_77.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>wertex (fg 2000d )</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/24-dio-2-qollu-ag.html">
+                  <div class="img-wrap">
+                    <img src="img/1672232310_77.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Diolasheer ice dual handle</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/23-dio-2-qollu.html">
+                  <div class="img-wrap">
+                    <img src="img/1672232310_77.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Diolasheer ice dual handle</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/22-dio.html">
+                  <div class="img-wrap">
+                    <img src="img/1672232310_77.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Diolasheer ice</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a
+                  href="https://az-cosmetics.az/products/laser/diode-system/52-lazer-epilyasiyada-yeni-dalga-sunlight10.html">
+                  <div class="img-wrap">
+                    <img src="img/1672232310_77.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Lazer epilyasiyada yeni dalğa Sunlight10®</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/41-diolasheer-ice.html">
+                  <div class="img-wrap">
+                    <img src="img/1672232310_77.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Diolasheer ice</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/29-w4.html">
+                  <div class="img-wrap">
+                    <img src="img/1672232310_77.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>W4 golden</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/28-w3.html">
+                  <div class="img-wrap">
+                    <img src="img/1672232310_77.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>W3 black ball</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/27-w2.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>W2 golden</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/26-sunlight-prime.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Sunlight prime</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/25-fg-2000.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>wertex (fg 2000d )</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/24-dio-2-qollu-ag.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Diolasheer ice dual handle</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item active" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/23-dio-2-qollu.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Diolasheer ice dual handle</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item active" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/22-dio.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Diolasheer ice</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned active" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a
+                  href="https://az-cosmetics.az/products/laser/diode-system/52-lazer-epilyasiyada-yeni-dalga-sunlight10.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Lazer epilyasiyada yeni dalğa Sunlight10®</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/41-diolasheer-ice.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Diolasheer ice</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/29-w4.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>W4 golden</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/28-w3.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>W3 black ball</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/laser/diode-system/27-w2.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>W2 golden</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-dots disabled"></div>
+      </div>
+    </div>
+  </section>
+  <section id="category2" class="products-sec grey-sec">
+    <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+      <div class="title-row">
+        <h3 class="title">Kosmetoloji avadanlıqlar</h3>
+        <div class="custom-nav">
+        </div>
+      </div>
+      <div class="products-carousel owl-carousel owl-theme owl-loaded owl-drag">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="owl-stage-outer">
+          <div class="owl-stage"
+            style="transform: translate3d(-2239px, 0px, 0px); transition: all 0.25s ease 0s; width: 3734px;">
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/cosmetology/39-kosmetoloji-3.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Çoxfunksiyalı kombayn</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/cosmetology/38-kosmetoloji-2.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Kosmetoloji kombayn</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/cosmetology/37-kosmetoloji-1.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Titanium kosmetoloji kombayn</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/cosmetology/40-kosmetoloji-4.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Akvapilinq</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/cosmetology/39-kosmetoloji-3.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Çoxfunksiyalı kombayn</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/cosmetology/38-kosmetoloji-2.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Kosmetoloji kombayn</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item active" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/cosmetology/37-kosmetoloji-1.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Titanium kosmetoloji kombayn</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned active" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/cosmetology/40-kosmetoloji-4.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Akvapilinq</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned active" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/cosmetology/39-kosmetoloji-3.html">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Çoxfunksiyalı kombayn</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+             A 20,20 0,0,1 50,30
+             A 20,20 0,0,1 90,30
+             Q 90,60 50,90
+             Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="https://az-cosmetics.az/products/cosmetology/38-kosmetoloji-2.html">
+                  <div class="img-wrap">
+                    <img src="img/1672232310_77.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Kosmetoloji kombayn</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-dots disabled"></div>
+      </div>
+    </div>
+  </section>
+  <section id="category3" class="products-sec">
+    <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+      <div class="title-row">
+        <h3 class="title">Arıqlama, estetik avadanlıqlar</h3>
+        <div class="custom-nav">
+        </div>
+      </div>
+      <div class="products-carousel owl-carousel owl-theme owl-loaded owl-drag">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="owl-stage-outer">
+          <div class="owl-stage"
+            style="transform: translate3d(-2239px, 0px, 0px); transition: all 0.25s ease 0s; width: 5974px;">
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+                     A 20,20 0,0,1 50,30
+                     A 20,20 0,0,1 90,30
+                     Q 90,60 50,90
+                     Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1655722125_kosmetoloji_2-1-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Kriolipoliz</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+                     A 20,20 0,0,1 50,30
+                     A 20,20 0,0,1 90,30
+                     Q 90,60 50,90
+                     Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1658225769_1655722526_kosmetoloji-4-2-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Kriolipoliz</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+                     A 20,20 0,0,1 50,30
+                     A 20,20 0,0,1 90,30
+                     Q 90,60 50,90
+                     Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1655721058_ariqlama_6-1-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Portativ kriolipoliz</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+                     A 20,20 0,0,1 50,30
+                     A 20,20 0,0,1 90,30
+                     Q 90,60 50,90
+                     Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>emsculpt</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+                     A 20,20 0,0,1 50,30
+                     A 20,20 0,0,1 90,30
+                     Q 90,60 50,90
+                     Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>G8 turbo</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+                     A 20,20 0,0,1 50,30
+                     A 20,20 0,0,1 90,30
+                     Q 90,60 50,90
+                     Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/photo_2022-10-26_11-53-33-removebg-preview.png
+                    " alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Kavitasiya RF</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item active" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+                     A 20,20 0,0,1 50,30
+                     A 20,20 0,0,1 90,30
+                     Q 90,60 50,90
+                     Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Kavitasiya RF</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item active" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+                     A 20,20 0,0,1 50,30
+                     A 20,20 0,0,1 90,30
+                     Q 90,60 50,90
+                     Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>miostimulyator</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item active" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+                     A 20,20 0,0,1 50,30
+                     A 20,20 0,0,1 90,30
+                     Q 90,60 50,90
+                     Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Kriolipoliz</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+                     A 20,20 0,0,1 50,30
+                     A 20,20 0,0,1 90,30
+                     Q 90,60 50,90
+                     Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1655724603_1654675455_sunlight-prime-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Kriolipoliz</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+                     A 20,20 0,0,1 50,30
+                     A 20,20 0,0,1 90,30
+                     Q 90,60 50,90
+                     Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1658230900_2.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Portativ kriolipoliz</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+                     A 20,20 0,0,1 50,30
+                     A 20,20 0,0,1 90,30
+                     Q 90,60 50,90
+                     Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1654675918_w3-1-3-1.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>emsculpt</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+                     A 20,20 0,0,1 50,30
+                     A 20,20 0,0,1 90,30
+                     Q 90,60 50,90
+                     Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/photo_2022-10-26_11-53-33-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>G8 turbo</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+                     A 20,20 0,0,1 50,30
+                     A 20,20 0,0,1 90,30
+                     Q 90,60 50,90
+                     Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1655715166_ariqlama1-2-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Kavitasiya RF</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+                     A 20,20 0,0,1 50,30
+                     A 20,20 0,0,1 90,30
+                     Q 90,60 50,90
+                     Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1655714040_lazer-epilyasiya-3-2-1.jpg" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>Kavitasiya RF</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 369.333px; margin-right: 4px;">
+              <div class="product-box">
+                <div class="box-top">
+                  <div class="heart">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="none" stroke="#ff0426" d="M 10,30
+                     A 20,20 0,0,1 50,30
+                     A 20,20 0,0,1 90,30
+                     Q 90,60 50,90
+                     Q 10,60 10,30 z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1655715166_ariqlama1-2-removebg-preview.png" alt="product">
+                  </div>
+                  <div class="title-wrapper">
+                    <div class="title-wrap">
+                      <h5>miostimulyator</h5>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="has-stock"><i class="fas fa-check-circle"></i>Stokda var</p>
+                      <div class="more-btn">Məhsula bax</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-dots disabled"></div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="grey-sec">
+    <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+      <h3 class="title">Layihələrimiz</h3>
+      <p>Qısa zamanda təhvil verdiyimiz son işlərimizin bəziləri ilə tanış olun</p>
+    </div>
+    <div class="projects-carousel-wrapper aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000"
+      data-aos-delay="100">
+      <div class="projects-carousel owl-carousel owl-theme owl-loaded owl-drag">
+
+        <div class="owl-stage-outer">
+          <div class="owl-stage"
+            style="transition: all 0.3s ease 0s; width: 5116px; transform: translate3d(-2415px, 0px, 0px);">
+            <div class="owl-item cloned" style="width: 518.4px; margin-right: 50px;">
+              <div class="project-box" data-position="0">
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1650453012_275833935_702713160730110_4797012724884431145_n.jpeg" alt="project">
+                  </div>
+                  <div class="project-info">
+                    <span class="date">20.04.2022</span>
+                    <h6>"Lazer epilyasiya və bədən şəkilləndirmə texnologiyaları" seminarı</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 518.4px; margin-right: 50px;">
+              <div class="project-box" data-position="1">
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1655714040_lazer-epilyasiya-3-2-1.jpg" alt="project">
+                  </div>
+                  <div class="project-info">
+                    <span class="date">20.04.2022</span>
+                    <h6>Bayram xonçanızda bizim də payımız olsun</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 518.4px; margin-right: 50px;">
+              <div class="project-box" data-position="2">
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1655722125_kosmetoloji_2-1-removebg-preview.png" alt="project">
+                  </div>
+                  <div class="project-info">
+                    <span class="date">15.04.2022</span>
+                    <h6>Kənan Zeynal ilə "işimi bilirəm"</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 518.4px; margin-right: 50px;">
+              <div class="project-box" data-position="0">
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1658225769_1655722526_kosmetoloji-4-2-removebg-preview.png" alt="project">
+                  </div>
+                  <div class="project-info">
+                    <span class="date">20.04.2022</span>
+                    <h6>"Lazer epilyasiya və bədən şəkilləndirmə texnologiyaları" seminarı</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 518.4px; margin-right: 50px;">
+              <div class="project-box" data-position="1">
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1657008687_2-ci-lazer.png" alt="project">
+                  </div>
+                  <div class="project-info">
+                    <span class="date">20.04.2022</span>
+                    <h6>Bayram xonçanızda bizim də payımız olsun</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item active center" style="width: 518.4px; margin-right: 50px;">
+              <div class="project-box" data-position="2">
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1658225769_1655722526_kosmetoloji-4-2-removebg-preview.png" alt="project">
+                  </div>
+                  <div class="project-info">
+                    <span class="date">15.04.2022</span>
+                    <h6>Kənan Zeynal ilə "işimi bilirəm"</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned active" style="width: 518.4px; margin-right: 50px;">
+              <div class="project-box" data-position="0">
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1658225769_1655722526_kosmetoloji-4-2-removebg-preview.png" alt="project">
+                  </div>
+                  <div class="project-info">
+                    <span class="date">20.04.2022</span>
+                    <h6>"Lazer epilyasiya və bədən şəkilləndirmə texnologiyaları" seminarı</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 518.4px; margin-right: 50px;">
+              <div class="project-box" data-position="1">
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="/img/1655714040_lazer-epilyasiya-3-2-1.jpg" alt="project">
+                  </div>
+                  <div class="project-info">
+                    <span class="date">20.04.2022</span>
+                    <h6>Bayram xonçanızda bizim də payımız olsun</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 518.4px; margin-right: 50px;">
+              <div class="project-box" data-position="2">
+                <a href="">
+                  <div class="img-wrap">
+                    <img src="img/1650453012_275833935_702713160730110_4797012724884431145_n.jpeg" alt="project">
+                  </div>
+                  <div class="project-info">
+                    <span class="date">15.04.2022</span>
+                    <h6>Kənan Zeynal ilə "işimi bilirəm"</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-dots disabled"></div>
+      </div>
+      <div class="custom-navs">
+   
+      </div>
+    <a href="/projects/" class="all-projects">Bütsün layihələrə bax <i class="fas fa-arrow-alt-circle-right"></i></a>
+  </section>
+  <section id="news">
+    <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+      <h3 class="text-center title">Yeniliklərimiz</h3>
+      <div class="row justify-content-center">
+
+
+
+
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 news-box-wrap">
+          <a href="" class="news-box">
+            <div class="img-wrap">
+              <img src="img/card1.jpg" alt="news">
+            </div>
+            <div class="news-title">
+              <span class="date">22.04.2022</span>
+              <h6>İki fərqli başlığa sahib G8 turbo</h6>
+            </div>
+          </a>
+        </div>
+
+
+
+
+
+
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 news-box-wrap">
+          <a href="" class="news-box">
+            <div class="img-wrap">
+              <img src="img/card2.jpg" alt="news">
+            </div>
+            <div class="news-title">
+              <span class="date">22.04.2022</span>
+              <h6>Diolasheer ice</h6>
+            </div>
+          </a>
+        </div>
+
+
+
+
+
+
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 news-box-wrap">
+          <a href="" class="news-box">
+            <div class="img-wrap">
+              <img src="img/card3.png" alt="news">
+            </div>
+            <div class="news-title">
+              <span class="date">22.04.2022</span>
+              <h6>Sunlight-lazer epilyasiyada yeni dalğa</h6>
+            </div>
+          </a>
+        </div>
+
+
+
+
+
+
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 news-box-wrap">
+          <a href="" class="news-box">
+            <div class="img-wrap">
+              <img src="img/card4.jpg" alt="news">
+            </div>
+            <div class="news-title">
+              <span class="date">22.04.2022</span>
+              <h6>Cuatro</h6>
+            </div>
+          </a>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+  <section id="partners" class="grey-sec d-none">
+    <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+      <h3 class="text-center title">Referanslar</h3>
+      <div class="partners-wrapper">
+        <div class="partner-wrap">
+          <div class="partner-box">
+            <img src="/img/ref.jpeg" alt="partner">
+          </div>
+        </div>
+        <div class="partner-wrap">
+          <div class="partner-box">
+            <img src="/img/ref2.png" alt="partner">
+          </div>
+        </div>
+        <div class="partner-wrap">
+          <div class="partner-box">
+            <img src="/img/ref.jpeg" alt="partner">
+          </div>
+        </div>
+        <div class="partner-wrap">
+          <div class="partner-box">
+            <img src="/img/ref2.png" alt="partner">
+          </div>
+        </div>
+        <div class="partner-wrap">
+          <div class="partner-box">
+            <img src="/img/ref.jpeg" alt="partner">
+          </div>
+        </div>
+        <div class="partner-wrap">
+          <div class="partner-box">
+            <img src="/img/ref2.png" alt="partner">
+          </div>
+        </div>
+        <div class="partner-wrap">
+          <div class="partner-box">
+            <img src="/img/ref.jpeg" alt="partner">
+          </div>
+        </div>
+        <div class="partner-wrap">
+          <div class="partner-box">
+            <img src="/img/ref2.png" alt="partner">
+          </div>
+        </div>
+        <div class="partner-wrap">
+          <div class="partner-box">
+            <img src="/img/ref.jpeg" alt="partner">
+          </div>
+        </div>
+        <div class="partner-wrap">
+          <div class="partner-box">
+            <img src="/img/ref2.png" alt="partner">
+          </div>
+        </div>
+        <div class="partner-wrap">
+          <div class="partner-box">
+            <img src="/img/ref.jpeg" alt="partner">
+          </div>
+        </div>
+        <div class="partner-wrap">
+          <div class="partner-box">
+            <img src="/img/ref2.png" alt="partner">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="section-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <div class="media-wrapper">
+              <a class="footer-brand" href="/">
+                <img src="/img/footer-logo.png?ver=1" alt="logo">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-8">
+            <div class="row">
+              <div class="col-lg-4">
+                <ul class="footer-list">
+                  <li class="active">
+                    <a href="/">Baş səhifə</a>
+                  </li>
+                  <li>
+                    <a href="/about/">Şirkət haqqında</a>
+                  </li>
+                  <li>
+                    <a href="/products/">Məhsullar</a>
+                  </li>
+                  <li>
+                    <a href="/service/">Servis</a>
+                  </li>
+                  <li>
+                    <a href="/education-center/">Tədris</a>
+                  </li>
+                  <li>
+                    <a href="/projects/">Layihələr</a>
+                  </li>
+                  <li>
+                    <a href="/news/">Yeniliklər</a>
+                  </li>
+                  <li>
+                    <a href="/contact">Əlaqə</a>
+                  </li>
+                </ul>
+                <ul class="social-media">
+                  <li>
+                    <a href="https://www.facebook.com/Azcosmeticsmmc-107343301815760" target="_blank">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/azcosmetics_mmc/" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/channel/UCCtsNijw2CdGpH5NSj_EHyA" target="_blank">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="wp-info-box info-box">
+                  <h6>Bizə müraciət edin</h6>
+                  <a href="tel:+994504592616" class="tel-link">(+99450) 459 26 16</a>
+                  <span>B.e - C. (10:00 - 19:00)</span>
+                  <a href="https://api.whatsapp.com/send?phone=994504592616&amp;text=Salam, sizə www.az-cosmetics.az saytından yazıram."
+                    class="wp-btn custom-btn2" target="_blank">Whatsapp-a yazın</a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="wp-info-box info-box">
+                  <h6>Servis</h6>
+                  <a href="tel:+994707444446" class="tel-link">(+99470) 744 44 46</a>
+                  <a href="mailto:info@az-cosmetics.az" class="email-link">info@az-cosmetics.az</a>
+                  <a href="https://api.whatsapp.com/send?phone=994707444446&amp;text=Salam, sizə www.az-cosmetics.az saytından yazıram."
+                    class="wp-btn custom-btn2" target="_blank">Whatsapp-a yazın</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-bottom">
+      <div class="container">
+        <div class="footer-row">
+          <span>Copyright © 2023 "AzCosmetics MMC"</span>
+          <p class="createby">Saytın hazırlanması:
+            <a href="https://okmedia.az/" target="_blank">
+              <img src="img/ok_logo.png" alt="okmedia logo">
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4="
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function () {
+      // products carousel
+      $('#best-products .products-carousel').owlCarousel({
+        loop: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        nav: true,
+        navContainer: '#best-products .custom-nav',
+        navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
+        margin: 4,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          992: {
+            items: 3
+          },
+          1400: {
+            items: 4
+          }
+        }
+      });
+      $('#category1 .products-carousel').owlCarousel({
+        loop: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        nav: true,
+        navContainer: '#category1 .custom-nav',
+        navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
+        margin: 4,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          992: {
+            items: 3
+          },
+          1400: {
+            items: 4
+          }
+        }
+      });
+      $('#category2 .products-carousel').owlCarousel({
+        loop: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        nav: true,
+        navContainer: '#category2 .custom-nav',
+        navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
+        margin: 4,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          992: {
+            items: 3
+          },
+          1400: {
+            items: 4
+          }
+        }
+      });
+      $('#category3 .products-carousel').owlCarousel({
+        loop: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        nav: true,
+        navContainer: '#category3 .custom-nav',
+        navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
+        margin: 4,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          992: {
+            items: 3
+          },
+          1400: {
+            items: 4
+          }
+        }
+      });
+      var owl;
+
+      $('.owl-prev').on('click', function () {
+        owl = $(this).parents().eq(1).next('.owl-carousel');
+        owl.trigger('stop.owl.autoplay');
+      });
+
+      $('.owl-prev').on('mouseleave', function () {
+        owl = $(this).parents().eq(1).next('.owl-carousel');
+        owl.trigger('play.owl.autoplay');
+      });
+
+      $('.owl-next').on('click', function () {
+        owl = $(this).parents().eq(1).next('.owl-carousel');
+        owl.trigger('stop.owl.autoplay');
+      });
+
+      $('.owl-next').on('mouseleave', function () {
+        owl = $(this).parents().eq(1).next('.owl-carousel');
+        owl.trigger('play.owl.autoplay');
+      });
+
+      // projects carousel 
+      var owl = $('.projects-carousel');
+      owl.children().each(function (index) {
+        $(this).attr('data-position', index);
+      });
+
+      $('.projects-carousel').owlCarousel({
+        loop: true,
+        center: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        nav: true,
+        navSpeed: 300,
+        smartSpeed: 300,
+        dots: false,
+        navContainer: '.custom-navs',
+        responsive: {
+          0: {
+            items: 1,
+            margin: 0,
+          },
+          768: {
+            items: 1.5,
+            margin: 20,
+          },
+          1000: {
+            items: 2.5,
+            margin: 50,
+          },
+        },
+      });
+
+    })
+  </script>
+  <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/defa2175a2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
